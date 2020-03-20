@@ -21,7 +21,9 @@
     "element-ui": "^2.4.11",
     "i": "^0.3.6",
     "koa": "^2.6.2",
-    "nuxt": "^2.0.0"
+    "node-sass": "^4.13.1",
+    "nuxt": "^2.0.0",
+    "sass-loader": "^8.0.2"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.0",
