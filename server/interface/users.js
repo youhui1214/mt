@@ -67,7 +67,7 @@ router.post('/signup', async (ctx) => {
   }
 })
 
-router.post('/signin', async (ctx, next) => {
+router.post('/signin', (ctx, next) => {
   return Passport.authenticate('local', function (err, user, info, status) {
     if (err) {
       ctx.body = {
@@ -145,7 +145,7 @@ router.get('/exit', async (ctx, next) => {
   }
 })
 
-router.get('/getUser', async (ctx) => {
+router.get('/getUser', (ctx) => {
   if (ctx.isAuthenticated()) {
     const { username, email } = ctx.session.passport.user
     ctx.body = {
